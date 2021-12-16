@@ -1,0 +1,8 @@
+{
+    "name": "jameyg/wc-tree-table-rate-shipping",
+    "description": "Tree table rate shipping",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
