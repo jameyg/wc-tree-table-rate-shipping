@@ -1,0 +1,690 @@
+@import "../../font-awesome/css/font-awesome.min.css";
+.trs input,
+.trs select,
+.trs textarea {
+  margin: 0;
+  font-size: inherit;
+}
+.trs input[type=email],
+.trs input[type=number],
+.trs input[type=password],
+.trs input[type=search],
+.trs input[type=tel],
+.trs input[type=text],
+.trs select {
+  height: 28px;
+  vertical-align: middle;
+}
+.trs input[type=number],
+.trs .wc_input_decimal {
+  text-align: right;
+  width: 5em;
+}
+.trs [contenteditable] {
+  cursor: text;
+}
+.trs .panel {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+.trs .sort-handle {
+  cursor: move;
+}
+.trs .placeholder {
+  border: 2px dashed;
+}
+.trs .hoverable:not(:hover) .hoverable-target {
+  display: none !important;
+}
+.trs .nowrap {
+  display: inline-block;
+  white-space: nowrap;
+}
+.trs option.meaningless {
+  font-style: italic;
+  color: #ccc;
+}
+.trs option.separator {
+  color: lightgrey;
+}
+.trs .button.x-remove {
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: gray;
+}
+.trs .button.x-remove:hover {
+  background: #f1f1f1;
+  color: #016087;
+}
+.trs .operation-add {
+  display: none;
+}
+.trs .form fieldset {
+  display: table;
+  width: 100%;
+  padding-bottom: 0.5em;
+}
+.trs .form fieldset .section-hint {
+  padding-left: 0.5em;
+}
+.trs .form fieldset legend {
+  padding: 0 0 0 0.5em;
+  line-height: 3em;
+}
+.trs .form fieldset legend .strong {
+  font-size: 120%;
+  font-weight: bold;
+  padding-right: 0.15em;
+}
+.trs .form fieldset legend select {
+  vertical-align: baseline;
+}
+.trs .form fieldset label,
+.trs .form fieldset .row {
+  display: table-row;
+  background: rgba(0, 0, 0, 0.025);
+}
+.trs .form fieldset label:nth-child(odd),
+.trs .form fieldset .row:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.01);
+}
+.trs .form fieldset label::after,
+.trs .form fieldset .row::after {
+  content: "";
+  display: table-cell;
+}
+.trs .form fieldset label > *,
+.trs .form fieldset .row > * {
+  display: table-cell;
+  padding: 0.3em;
+  vertical-align: top;
+  line-height: 26px;
+}
+.trs .form fieldset label > *:first-child,
+.trs .form fieldset .row > *:first-child {
+  padding-left: 0.5em;
+}
+.trs .form fieldset label > *.main-cell,
+.trs .form fieldset .row > *.main-cell {
+  width: 100%;
+}
+.trs .form fieldset label .label,
+.trs .form fieldset .row .label {
+  font-weight: bold;
+  padding-right: 2em;
+  white-space: nowrap;
+}
+.trs .form fieldset label .afterlabel,
+.trs .form fieldset .row .afterlabel {
+  vertical-align: middle;
+  display: inline;
+  padding-left: 0.5em;
+}
+.trs .form fieldset li.row > *.main-cell {
+  padding-left: 8em;
+  font-size: 14px;
+}
+.trs .form fieldset li.row > *.main-cell > :first-child {
+  width: 8em;
+  margin-left: -8em;
+}
+.trs .form fieldset li.row > *.main-cell .hint-content {
+  margin: 0 0 1em -8em;
+}
+.trs .form fieldset li.row > *.main-cell .nowrap {
+  margin-left: 3px;
+}
+.trs .form fieldset li.operation.row > *.main-cell {
+  padding-left: 16em;
+}
+.trs .form fieldset li.operation.row > *.main-cell > :nth-child(2) {
+  width: 16em;
+  margin-left: -16em;
+}
+.trs .form fieldset li.operation.row > *.main-cell .hint-content {
+  margin-left: -16.6em;
+}
+.trs .form fieldset .calculator-shipping_method .select2-container {
+  margin-left: -16em;
+  margin-top: 0.2em;
+  width: calc(100% + 16em) !important;
+}
+.trs .form fieldset .row-add {
+  display: block;
+  overflow: hidden;
+  background: transparent;
+}
+.trs .form fieldset label {
+  background: rgba(0, 0, 0, 0.01);
+}
+.trs .form fieldset label:nth-child(odd) {
+  background: rgba(0, 0, 0, 0.025);
+}
+.trs .form .helper {
+  vertical-align: middle;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+  padding-bottom: 4px;
+}
+.trs .form .helper.prefix {
+  margin-left: 1em;
+}
+.trs .form .hint-link {
+  white-space: nowrap;
+}
+.trs .form .hint-link,
+.trs .form .hint-link:hover,
+.trs .form .hint-link:focus,
+.trs .form .hint-link:link,
+.trs .form .hint-link:active,
+.trs .form .hint-link:visited {
+  text-decoration: none;
+  border: 0;
+  border-bottom: 1px dashed;
+  cursor: pointer;
+}
+.trs .form .hint-link:hover,
+.trs .form .hint-link:focus,
+.trs .form .hint-link:active {
+  border: 0;
+}
+.trs .form .rate-title {
+  padding: 0.6em 0.5em 0.5em 0.5em;
+}
+.trs .form .rows {
+  padding-left: 0.5em;
+}
+.trs .input-group,
+.trs .decorated-input {
+  display: inline-block;
+  position: relative;
+  line-height: normal;
+  white-space: normal;
+  /* fix FF moving input-decorator to the next line when white-space: nowrap applied to a parent element */
+  vertical-align: middle;
+  /* fix line alignment issue is Safari 9 */
+}
+.trs .input-group .input-decorator,
+.trs .decorated-input .input-decorator {
+  line-height: 28px;
+  height: 28px;
+  border: 1px solid #7e8993;
+  padding: 0 0.5em;
+  border-radius: 5px;
+}
+.trs .input-group .input-decorator sup,
+.trs .decorated-input .input-decorator sup {
+  font-size: 50%;
+}
+.trs .input-group .input-decorator.left,
+.trs .decorated-input .input-decorator.left {
+  float: left;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  margin-right: -3px;
+  padding-right: calc(0.5em + 2px);
+}
+.trs .input-group .input-decorator.right,
+.trs .decorated-input .input-decorator.right {
+  float: right;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+  margin-left: -3px;
+  padding-left: calc(0.5em + 2px);
+}
+.trs .input-group .main-input.left,
+.trs .decorated-input .main-input.left {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: 0;
+  float: none;
+}
+.trs .input-group .main-input.right,
+.trs .decorated-input .main-input.right {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0;
+  float: none;
+}
+.trs .inactive-input {
+  color: rgba(0, 0, 0, 0.5);
+}
+.trs .inactive-input input {
+  background-color: transparent;
+}
+.trs .section-header {
+  box-sizing: border-box;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.08);
+  position: relative;
+  margin-bottom: 0.5em;
+}
+.trs .advanced-settings-button {
+  opacity: 0.75;
+  position: absolute;
+  top: 7px;
+  right: 5px;
+}
+.trs input[type="number"].whole-number::-webkit-outer-spin-button,
+.trs input[type="number"].whole-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.trs input[type="number"].whole-number {
+  -moz-appearance: textfield;
+}
+.trs .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: outside none none;
+  background-color: #FFF;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  box-sizing: border-box;
+  color: #444;
+  font-weight: normal;
+  line-height: normal;
+  padding: 0;
+}
+.trs .dropdown-menu * {
+  box-sizing: border-box;
+}
+.trs .dropdown-menu > li {
+  margin: 0;
+  padding: 0;
+}
+.trs .dropdown-menu > li > a {
+  display: block;
+  padding: 0 1em;
+  clear: both;
+  font-weight: normal;
+  line-height: 200%;
+  color: #444;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+.trs .dropdown-menu > li > a:hover {
+  background: #eee;
+}
+.trs .dropdown-menu > li:first-child > a {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.trs .dropdown-menu > li:last-child > a {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.trs .open > .dropdown-menu {
+  display: block;
+}
+.trs .rules .rule-list {
+  margin-left: 30px;
+}
+.trs .rules .rule-list .rule-item {
+  display: block;
+  clear: both;
+  position: relative;
+  border: 1px dotted #aaa;
+  margin: -1px 0 0 0;
+}
+.trs .rules .rule-list .rule-item .toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 150%;
+  float: left;
+  line-height: 38px;
+  padding-left: 7px;
+  margin-right: 5px;
+  color: black;
+}
+.trs .rules .rule-list .rule-item.has-children:not(.expanded) > .content .toggle.expand {
+  display: inline-block;
+}
+.trs .rules .rule-list .rule-item.has-children.expanded > .content .toggle.collapse {
+  display: inline-block;
+}
+.trs .rules .rule-list .rule-item > .content .header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 5px;
+  cursor: pointer;
+  overflow: visible;
+}
+.trs .rules .rule-list .rule-item > .content .header::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  border-top: 1px dotted;
+  overflow: hidden;
+  top: 17.5px;
+  left: -12px;
+  color: black;
+}
+.trs .rules .rule-list .rule-item > .content .header:hover {
+  background-color: #ccc !important;
+}
+.trs .rules .rule-list .rule-item > .content .header .rule-enable {
+  vertical-align: -4px;
+  margin-left: 4px;
+}
+.trs .rules .rule-list .rule-item > .content .header .rule-label {
+  margin: 0;
+  padding: 3px 5px;
+  min-height: 0;
+  line-height: normal;
+  vertical-align: 0;
+  border: none;
+  background: inherit;
+  font-family: monospace;
+  cursor: text;
+  box-shadow: none;
+  border-radius: 3px;
+  height: auto;
+  color: inherit;
+  max-width: calc(100% - 500px);
+}
+.trs .rules .rule-list .rule-item > .content .header .rule-label:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+.trs .rules .rule-list .rule-item > .content .header .rule-hint {
+  display: inline-block;
+  padding: 0 1em;
+  pointer-events: none;
+  color: grey;
+  font-style: italic;
+  font-weight: normal;
+  position: absolute;
+  white-space: nowrap;
+}
+.trs .rules .rule-list .rule-item > .content .header .rule-toggle {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+.trs .rules .rule-list .rule-item > .content .header .rule-drag {
+  cursor: move;
+  margin-left: 1em;
+  pointer-events: all;
+}
+.trs .rules .rule-list .rule-item.has-children > .content .header {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  margin-bottom: 5px;
+  background-color: #ddd;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.trs .rules .rule-list .rule-item.expanded > .content .header {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.trs .rules .rule-list .rule-item.settings-open > .content .header {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  margin-bottom: 5px;
+}
+.trs .rules .rule-list .rule-item .actions {
+  display: none;
+  float: right;
+}
+.trs .rules .rule-list .rule-item .actions .button {
+  line-height: normal;
+  min-height: 24px;
+  height: 24px;
+  font-weight: normal;
+}
+.trs .rules .rule-list .rule-item .actions .button .fa {
+  font-size: 110%;
+}
+.trs .rules .rule-list .rule-item .actions > * {
+  display: inline-block;
+  float: none;
+  vertical-align: 3px;
+}
+.trs .rules .rule-list .rule-item .actions .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+.trs .rules .rule-list .rule-item > .content .header:hover .actions {
+  display: inline-block;
+}
+.trs .rules .rule-list .rule-item .settings {
+  position: relative;
+  top: -5px;
+  margin: 0 2px 20px 40px;
+  border-radius: 0 0 12px 12px;
+  background: rgba(0, 0, 0, 0.03);
+}
+.trs .rules .rule-list .rule-item .handles,
+.trs .rules .rule-list .rule-item .header {
+  line-height: 35px;
+}
+.trs .rules .rule-list .rule-item.has-children {
+  margin-top: 5px;
+  border: none;
+}
+.trs .rules .rule-list .rule-item.has-children::before {
+  content: ".";
+  position: absolute;
+  margin-left: 18px;
+  width: 0;
+  border-left: 1px dotted;
+  overflow: hidden;
+  height: 100%;
+  height: calc(100% - 35px / 2);
+  z-index: -1;
+}
+.trs .rules .rule-list .rule-item.settings-open {
+  border-width: 0 0 1px 0;
+}
+.trs .rules .root > .rule-list {
+  margin-left: 0;
+}
+.trs .rules ul:first-child > li > .content .header::before {
+  display: none;
+}
+.trs .rules .root-options {
+  padding: 3em 0 1em 0;
+}
+.trs .rules .greeting {
+  margin-top: 3em;
+}
+.trs .rules .greeting p {
+  font-size: 105%;
+}
+.trs .rules .bigger-button {
+  height: 32px;
+  font-size: 15px;
+  line-height: 30px;
+}
+.trs .rules .snippet-button {
+  margin-bottom: 0.5em;
+  width: 30em;
+  text-align: left;
+  border-color: transparent;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: block;
+  float: none;
+  height: 4em;
+  line-height: normal;
+  color: #333;
+}
+.trs .rules .snippet-button:hover,
+.trs .rules .snippet-button:focus {
+  border: 1px solid #999;
+}
+.trs .rules .snippet-button-subline {
+  display: block;
+  float: none;
+  color: #888;
+  font-size: 85%;
+}
+.trs .rules .empty-snippet-button {
+  height: 32px;
+  font-size: 15px;
+  line-height: 30px;
+  margin-top: 3em;
+}
+p.submit {
+  overflow: auto;
+  display: none;
+}
+p.submit [type="submit"] {
+  float: left;
+}
+p.submit .spinner {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  float: left;
+}
+p.submit [type="submit"].inprogress + .spinner {
+  opacity: 1;
+  visibility: visible;
+}
+.trs-messages .message {
+  margin: 0 !important;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.trs-messages .message .dismiss {
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+.trs-messages .message .dismiss:hover {
+  color: #d54e21;
+}
+#mainform #woocommerce_tree_table_rate_tax_status {
+  width: auto;
+  line-height: 2;
+}
+#mainform .titledesc {
+  display: none;
+}
+#mainform .forminp {
+  padding: 0;
+}
+#mainform .form-table {
+  display: none;
+}
+.select2.select2-container {
+  width: auto !important;
+  display: inline-block !important;
+  min-width: 20em;
+  font-size: 14px;
+  line-height: 1.85em;
+}
+.select2.select2-container .select2-search--inline .select2-search__field {
+  margin-top: 0 !important;
+}
+.select2.select2-container--focus .select2-selection {
+  border: 1px solid #777 !important;
+}
+.select2 .select2-selection {
+  font-size: 0;
+  line-height: normal;
+}
+.select2 .select2-search {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  z-index: auto;
+}
+.select2 .select2-selection__rendered {
+  font-size: 14px;
+  padding: 0 3px !important;
+}
+.select2 .select2-selection__rendered li {
+  height: 20px;
+  margin: 3px 3px 3px 0 !important;
+}
+.select2 .select2-search__field {
+  box-shadow: none !important;
+  margin-top: 0 !important;
+  padding: 0 5px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  line-height: normal !important;
+}
+.select2 .trs-postcode-range {
+  font-weight: bold;
+  padding: 0 1px;
+}
+.select2-container {
+  font-size: 14px;
+  line-height: 1.85em;
+}
+.select2-container .select2-results {
+  line-height: inherit;
+}
+.select2-container .select2-results__option {
+  padding: 0 5px;
+  margin: 0;
+}
+#woocommerce_tree_table_rate_tax_status ~ .select2-container {
+  min-width: 15.7em !important;
+}
+#woocommerce_tree_table_rate_label {
+  margin-top: 5px;
+  padding: 1px 6px;
+}
+.hint-handle {
+  display: inline;
+  cursor: help;
+  text-decoration: none;
+  border: none;
+  font-size: 120%;
+  padding: 0.3em;
+  color: #999;
+  vertical-align: -3px;
+}
+.hint-handle:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+.hint-handle .fa:before {
+  content: '\f059';
+}
+.hint-content {
+  display: none;
+  overflow: hidden;
+  max-width: 40em;
+  font-size: small;
+  line-height: normal;
+  font-weight: normal;
+  margin-top: 0.3em;
+}
+.hint-content.expanded .content {
+  display: block;
+}
+.hint-content code {
+  padding: 0 5px;
+}
+.hint-content .accent {
+  font-weight: bold;
+}
+.hint-content ul li {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  display: list-item;
+}
+.hint-content ul li:before {
+  content: " \2014  ";
+}
+.trs .form legend .hint-handle {
+  vertical-align: baseline;
+}
+.trs .form legend .hint-content {
+  padding-bottom: 1em;
+}

@@ -1,0 +1,30 @@
+<?php
+namespace TrsVendors\Dgm\Shengine\Migrations\Storage;
+
+use Dgm\Shengine\Migrations\Interfaces\Storage\IStorageAccess;
+use Dgm\Shengine\Migrations\Interfaces\Storage\IStorageRecord;
+
+
+class StorageRecord implements \TrsVendors\Dgm\Shengine\Migrations\Interfaces\Storage\IStorageRecord
+{
+    public function __construct(\TrsVendors\Dgm\Shengine\Migrations\Interfaces\Storage\IStorageAccess $parent, $key, $default = null)
+    {
+        $this->parent = $parent;
+        $this->key = $key;
+        $this->default = $default;
+    }
+
+    public function get()
+    {
+        return $this->parent->get($this->key, $this->default);
+    }
+
+    public function set($value)
+    {
+        $this->parent->set($this->key, $value);
+    }
+
+    private $parent;
+    private $key;
+    private $default;
+}
